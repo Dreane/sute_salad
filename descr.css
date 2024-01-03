@@ -1,0 +1,80 @@
+body{
+    width: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 75%;
+    margin: 0 auto;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6, img, div{
+    margin: 0;
+    padding: 0;
+}
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+header{
+    margin: 0;
+    background-color:rgb(174, 217, 174);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+header img {
+    max-width: 5vw;
+}
+header nav{
+    display: flex;
+    color:white
+}
+header nav p{
+    margin-right: 50px;
+    font-weight: bold;
+
+}
+.descr{
+    display: flex;
+    width: 100%;
+}
+
+.descr img{
+    max-width: 25vw;
+
+    max-height: 25vw;
+}
+
+.descr_text{
+    margin: 30px;
+}
+
+
+table{
+
+    width: 100%;
+}
+table{
+    border: 1px solid;
+    text-align:center;
+    background-color:rgb(205, 255, 211)
+}
+td:not(:last-child),th:not(:last-child){
+    border-right:1px solid;
+
+}
+td{
+    border-top: 1px solid;
+}
