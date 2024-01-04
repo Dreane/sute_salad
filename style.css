@@ -153,3 +153,16 @@ input{
     padding: 0;
 }
 
+footer{
+    margin-top: 50px;
+    background-color: rgb(174, 217, 174);
+    padding: 40px 150px;
+}
+.icon{
+    max-width: 1.9vw;
+    max-height:1.9vw;
+    object-fit: cover;
+}
+.timer{
+    font-size: x-large;
+}

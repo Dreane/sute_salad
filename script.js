@@ -1,3 +1,4 @@
+// Карточки
 foods = [
     ["Салат Цезарь",650, "static/img/cezar.jpg", "Описание Цезаря", "cezar-card","descr_food_cezar.html"],
     ["Салат Греческий", 550, "static/img/grech.jpg", "Описание Греческого", "grech-card", "descr_food_grech.html"],
@@ -18,44 +19,29 @@ foods.forEach(element => {
         <p class="old_price"><span>${element[1]}</span> руб</p>
         <p class="new_price"><span>${element[1]*0.8}</span> руб</p>
     </div>
-    <div class="${element[4]} btn_more">
-        <a href="#"><p>Читать далее</p></a>
-    </div>
+    <a href="${element[5]}"><div class="${element[4]} btn_more">
+        <p>Читать далее</p>
+    </div></a>
 
 </div>`;
     }
     
 });
 
-cards = document.querySelectorAll('.card');
-console.log(cards[0].ParentNode);
+timer = document.querySelector(".timer")
+// Таймер
+setInterval(function() {
+    now = Date.now()
+    t = Date.UTC(2024,1,31,0,0,0,0) - now
+    d = Math.floor(t / (1000 * 60 * 60 * 24)),
+    h = Math.floor((t / (1000 * 60 * 60) % 24)),
+    m = Math.floor((t / 1000 / 60) % 60),
+    s = Math.floor((t / 1000) % 60);
+    mon = Math.floor(t / (1000*60*60*24*30)) - 1
+    timer.innerHTML = `<p>${mon} мес. ${d} д ${h} ч. ${m} м. ${s} с.</p>`
+},1000)
 
-cnt_card = 0;
-
-if (cards){
-    cards.forEach(e => {
-    e.addEventListener('click',event => {
-        console.log(event.target.classList[0]);
-        food_class = event.target.classList[0];
-        for (let i = 0; i < foods.length; i++) {
-            if (i[6] == food_class){
-                document.querySelector(".descr_container").innerHTML += 
-                `<div class="descr">
-                <img src="static/img/cezar.jpg" alt="">
-                <div class="descr_text">
-                    <h1>Название салата</h1>
-                    <p>Описание салата</p>
-                </div>
-                </div>`;
-            };
-            
-        }
-    });
-    cnt_card ++;
-});
-}
-
-
+// Форма
 form.addEventListener('submit', e => {
     e.preventDefault();
     name_form = form.querySelector('[name="name"]');
