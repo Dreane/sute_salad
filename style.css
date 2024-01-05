@@ -165,7 +165,7 @@ footer{
 }
 .timer{
     display: flex;
-    font-size: x-large;
+    font-size: large;
     justify-content: center;
 }
 
@@ -175,4 +175,11 @@ footer{
     -webkit-box-shadow: 0px 5px 25px 11px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 5px 25px 11px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 5px 25px 11px rgba(34, 60, 80, 0.2);
+}
+.block_timer p{
+    margin: 0;
+}
+.block_timer span{
+    display: block;
+    font-size: xx-large;
 }

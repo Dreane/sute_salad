@@ -41,10 +41,10 @@ setInterval(function() {
     h = Math.floor((t / (1000 * 60 * 60) % 24)),
     m = Math.floor((t / 1000 / 60) % 60),
     s = Math.floor((t / 1000) % 60);
-    days.innerHTML = `${d}`
-    hours.innerHTML = `${h}`
-    minutes.innerHTML = `${m}`
-    seconds.innerHTML = `${s}`
+    days.innerHTML = `<p><span>${d}</span>Дней</p>`;
+    hours.innerHTML = `<p><span>${h}</span>Часов</p>`;
+    minutes.innerHTML = `<p><span>${m}</span>Минут</p>`;
+    seconds.innerHTML = `<p><span>${s}</span>Секунд</p>`;
 },1000)
 
 // Форма
