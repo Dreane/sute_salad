@@ -29,16 +29,22 @@ foods.forEach(element => {
 });
 
 timer = document.querySelector(".timer")
+days = document.querySelector(".days")
+hours = document.querySelector(".hours")
+minutes=document.querySelector(".minutes")
+seconds=document.querySelector(".seconds")
 // Таймер
 setInterval(function() {
     now = Date.now()
-    t = Date.UTC(2024,1,31,0,0,0,0) - now
+    t = Date.UTC(2024,0,31,23,59,59,0) - now
     d = Math.floor(t / (1000 * 60 * 60 * 24)),
     h = Math.floor((t / (1000 * 60 * 60) % 24)),
     m = Math.floor((t / 1000 / 60) % 60),
     s = Math.floor((t / 1000) % 60);
-    mon = Math.floor(t / (1000*60*60*24*30)) - 1
-    timer.innerHTML = `<p>${mon} мес. ${d} д ${h} ч. ${m} м. ${s} с.</p>`
+    days.innerHTML = `${d}`
+    hours.innerHTML = `${h}`
+    minutes.innerHTML = `${m}`
+    seconds.innerHTML = `${s}`
 },1000)
 
 // Форма
