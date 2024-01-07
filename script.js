@@ -2,7 +2,8 @@
 foods = [
     ["Салат Цезарь",650, "static/img/cezar.jpg", "Описание Цезаря", "cezar-card","descr_food_cezar.html"],
     ["Салат Греческий", 550, "static/img/grech.jpg", "Описание Греческого", "grech-card", "descr_food_grech.html"],
-    ["Салат фруктовый", 600,"static/img/fruits.jpg", "Описание фруктового", "fruit-card", "descr_food_fruit.html"],]
+    ["Салат фруктовый", 600,"static/img/fruits.jpg", "Описание фруктового", "fruit-card", "descr_food_fruit.html"],
+    ["Салат Нисуаз", 550, 'static/img/nisuaz.jpg', 'Описание Нисуаза', 'nizuaz-card', 'descr_food_nisuaz.html']]
 
 const form = document.querySelector('.form')
 console.log
