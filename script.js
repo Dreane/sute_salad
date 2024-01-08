@@ -1,4 +1,5 @@
 // Карточки
+// Двумерный массив из названий блюд (используется для карточек)
 foods = [
     ["Салат Цезарь",650, "static/img/cezar.jpg", "Описание Цезаря", "cezar-card","descr_food_cezar.html"],
     ["Салат Греческий", 550, "static/img/grech.jpg", "Описание Греческого", "grech-card", "descr_food_grech.html"],
@@ -7,6 +8,8 @@ foods = [
 
 const form = document.querySelector('.form')
 console.log
+
+// Появление карточек на главном экране
 foods.forEach(element => {
     if (document.querySelector(".cards")) {
         document.querySelector(".cards").innerHTML += `<div class="${element[4]} card">
@@ -34,6 +37,7 @@ days = document.querySelector(".days")
 hours = document.querySelector(".hours")
 minutes=document.querySelector(".minutes")
 seconds=document.querySelector(".seconds")
+
 // Таймер
 setInterval(function() {
     now = Date.now()

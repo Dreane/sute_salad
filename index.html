@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Подключение  стиилей-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -12,6 +12,7 @@
     <title>foods</title>
 </head>
 <body>
+    <!-- Верхняя часть с лого-->
     <header>
         <img src="static/img/logo.png" alt="">
         <nav>
@@ -19,6 +20,7 @@
             <p><a href="#form">Заказ</a></p>
         </nav>
     </header>
+    <!-- Главный экран с .gif -->
     <div class="container descr_container">
         <div class="main_header">
             <div class="main_header_title">
@@ -28,7 +30,7 @@
             </div>
             
         </div>
-        
+    <!-- Блок с карточками блюд (карточки подгружаются с помощью JS)-->
     <div class="cards_block">
         <div class="block_header">
             <h3>Каталог</h3>
@@ -36,6 +38,8 @@
         <div class="cards" id="cards"> 
         </div>
     </div>
+
+    <!-- Блок с таймером (подгружается с помощью JS)-->
     <div class="promo_block">
         <div class="block_header">
             <h3>Акция месяца!</h3>
@@ -49,6 +53,7 @@
         </div>
     </div>
 
+    <!-- Форма (Появляение текста при отправке с использованием JS)-->
     <div class="input_block" id="form">
         <div class="block_header">
             <h3>Закажите звонок</h3>
@@ -60,6 +65,7 @@
     </form>
     </div>
 </div>
+<!-- Нижняя часть сайта -->
 <footer>
     <p>Наш телефон: +7 (800) 555-35-35</p>
     <p>Наш адрес: Пр. Большевиков, 22</p>
